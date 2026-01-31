@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { getSessionIdFromRequest } from "@/lib/auth";
+import { getSessionIdFromRequest } from "@/lib/session";
+
 
 export function middleware(req: NextRequest) {
   const url = req.nextUrl;
