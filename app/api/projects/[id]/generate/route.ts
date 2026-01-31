@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
-import { getSessionIdFromRequest } from "@/lib/auth";
+import { getSessionIdFromRequest } from "@/lib/session";
 import { SettingsSchema } from "@/lib/validation";
 import { buildPlannerDesignImagePrompts } from "@/lib/buildPlannerDesignImagePrompts";
 import { buildBlueprint } from "@/lib/buildBlueprint";
