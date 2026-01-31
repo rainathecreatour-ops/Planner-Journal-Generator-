@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { SettingsSchema } from "@/lib/validation";
-import { getSessionIdFromRequest } from "@/lib/auth";
+import { getSessionIdFromRequest } from "@/lib/session";
 import { getPlanForSession, clampPages, enforceProjectLimit } from "@/lib/entitlements";
 
 export async function GET(req: Request) {
